@@ -1,0 +1,119 @@
+.robot_bg{
+    width:1000px;
+    height:1000px;
+    margin: auto;
+}
+h1,footer{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    position: relative;
+}
+.head{
+    background-color: burlywood;
+    border: 3px solid black;
+    width: 190px;
+    height: 100px;
+    margin:0 auto;
+    margin-bottom: 10px;
+    border-radius: 50% 50% 20% 20%;
+    position: relative;
+    transition:transform 0.5s ease-in-out;
+}
+.eyes{
+    position: absolute;
+}
+.eye1{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    border-color: 2px solid black;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+.eye2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    border-color: 2px solid black;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+.hand1,.hand2{
+    background-color: darkturquoise;
+    width: 40px;
+    height: 125px;
+    border-radius: 30%;
+    margin-top: 20px;
+    border: 3px solid black;
+}
+.hand1{
+    margin-right: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+.hand2{
+    margin-right: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+.top{
+    width: 300px;
+    height: 150px;
+    margin:0 auto;
+    display: flex;
+}
+.mainbody{
+    background-color: orangered;
+    width: 200px;
+    height: 200px;
+    border-radius: 0 0 35% 35%;
+    border: 3px solid black;
+    transition: transform 0.5s ease-in-out;
+}
+.bottom{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: 52px;
+}
+.leg1,.leg2{
+    background-color: deeppink;
+    width: 40px;
+    height: 100px;
+    border-radius: 30%;
+    top: 5px;
+    border: 3px solid black;
+    position: absolute;
+}
+.leg1{
+    left: 45px;
+    transition: transform 0.5s ease-in-out;
+}
+.leg2{
+    left: 110px;
+    transition: transform 0.5s ease-in-out;
+}
+.robot_bg:hover .head{
+    transition: translate(-15px);
+}
+.robot_bg:hover .mainbody{
+    transform: rotate(360deg);
+    border-radius: 40%;
+}
+.robot_bg:hover .hand1{
+   transform:rotate(75deg);
+}
+.robot_bg:hover .hand2{
+    transform:rotate(-75);
+}
+.robot_bg:hover .leg1{
+    transform: rotate(60deg);
+}
+.robot_bg:hover .leg2{
+    transform: rotate(-60deg);
+}
